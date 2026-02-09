@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html>\
+<head>\
+  <title>Devansi, Be My Valentine \uc0\u55357 \u56472 </title>\
+  <style>\
+    body \{\
+      background: linear-gradient(to bottom right, #ff416c, #ff4b2b);\
+      font-family: 'Georgia', serif;\
+      text-align: center;\
+      color: white;\
+      padding-top: 80px;\
+      overflow: hidden;\
+    \}\
+\
+    h1 \{\
+      font-size: 3.2em;\
+      margin-bottom: 10px;\
+    \}\
+\
+    p \{\
+      font-size: 1.4em;\
+      max-width: 600px;\
+      margin: auto;\
+    \}\
+\
+    button \{\
+      font-size: 1.5em;\
+      padding: 15px 35px;\
+      margin: 25px;\
+      border: none;\
+      border-radius: 12px;\
+      cursor: pointer;\
+      font-weight: bold;\
+      transition: 0.2s ease;\
+    \}\
+\
+    #yesBtn \{\
+      background-color: #ffd700;\
+      color: black;\
+      box-shadow: 0 0 15px rgba(255,215,0,0.6);\
+    \}\
+\
+    #yesBtn:hover \{\
+      transform: scale(1.1);\
+    \}\
+\
+    #noBtn \{\
+      background-color: #ff1744;\
+      color: white;\
+      position: absolute;\
+    \}\
+  </style>\
+</head>\
+\
+<body>\
+\
+<h1>Devansi, will you be my Valentine? \uc0\u55357 \u56470 </h1>\
+\
+<p>\
+From the moment you walked into my life, everything got brighter.  \
+I love your smile, your heart, and the way you make even ordinary days feel special. \uc0\u10084 \u65039 \
+</p>\
+\
+<br>\
+\
+<button id="yesBtn" onclick="yes()">Yes, of course \uc0\u55357 \u56469 </button>\
+<button id="noBtn" onmouseover="moveNo()">No \uc0\u55357 \u56860 </button>\
+\
+<script>\
+function yes() \{\
+  document.body.innerHTML = `\
+    <h1>\uc0\u55357 \u56478  You said YES, Devansi! \u55357 \u56478 </h1>\
+    <p>You just made me the happiest person ever.</p>\
+    <p>Happy Valentine\'92s Day, my love \uc0\u10084 \u65039 </p>\
+    <p>Get ready for coffee, cuddles, and way too many kisses \uc0\u55357 \u56856 </p>\
+  `;\
+\}\
+\
+function moveNo() \{\
+  const btn = document.getElementById("noBtn");\
+  const x = Math.random() * (window.innerWidth - 150);\
+  const y = Math.random() * (window.innerHeight - 150);\
+  btn.style.left = x + "px";\
+  btn.style.top = y + "px";\
+\}\
+</script>\
+\
+</body>\
+</html>\
+}
